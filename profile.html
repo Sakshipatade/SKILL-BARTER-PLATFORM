@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page - SkillBarter</title>
+    <link rel="stylesheet" href="profile-style.css">
+    <script src="profile.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">SkillBarter</div>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="find-skills.html">Find Skills</a></li>
+            <li><a href="post-skill.html">Post Skill</a></li>
+            <li><a href="message.html">Messages</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <div class="profile-wrapper">
+            <div class="profile-card">
+                <div class="profile-pic-container">
+                    <img src="profile-placeholder.png" alt="Profile Picture" class="profile-pic" id="profileImage">
+                    <input type="file" id="imageUpload" accept="image/*" class="upload-input" />
+                    <button class="upload-btn" onclick="uploadPhoto()">📸 Upload Photo</button>
+                </div>
+                <h2 id="profileName">John Doe</h2>
+                <p id="profileEmail">john.doe@example.com</p>
+                <p id="profileBio">Passionate about learning and teaching new skills.</p>
+                <button class="edit-profile-btn" onclick="editProfile()">Edit Profile</button>
+            </div>
+
+            <!-- User Skills -->
+            <div class="user-skills">
+                <h3>Your Posted Skills</h3>
+                <div class="skills-grid" id="userSkills"></div>
+            </div>
+
+            <!-- Profile Stats -->
+            <div class="profile-stats">
+                <h3>Statistics</h3>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span id="skillCounter">0</span>
+                        <p>Skills Posted</p>
+                    </div>
+                    <div class="stat-item">
+                        <span id="connectionsMade">5</span>
+                        <p>Connections Made</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SkillBarter. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- 
+    after clicking on get started button the questions should be appear like the following
+    1. do you want to post the skill
+    2 do you want to find the skill
+    3. do you want to explore on our website
+    as per the input of the user ,the page should be directed to its specific page
+
+
+    change the ui more interesting
+
+    add more skills to website
+
+    In the profile, there is option called your skills ,
+    so give the option of post your skill and then after cliking on the
+    post your skill one form should get open to post my skills 
+
+    after submitting my form my skills should be displayed below the
+    my skills and the button should remain consistent for posting new skills
+    of mine
+
+    remove the option of edit and delete in the find skills module
+    and add the option in my profile for editing or deleting my skill
+-->
